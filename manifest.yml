@@ -1,0 +1,14 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: AppCloudRocket
+  host: AppCoudRocket
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - Auto-Scaling-AppCloudRocket
+  - Memcached Cloud-r8
+  - Object StorageCloudRocket
+  - Mobile Analytics-q9
